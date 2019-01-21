@@ -3,8 +3,6 @@
 ## Routes
 | SDK Method | HTTP Method | Route | Description | Params (Bold = optional) | Response |
 | ------ | ------ | ------ | ------ | ------ | ------ |
-| **DevOps** |  |  |  |  |  |
-| -- | GET  | /api/v1/_healthcheck | Returns {'status':'ok'} if healthy | -- | { 'status': 'ok' } |
 | **Auth** |  |  |  |  |  |
 | .authCheck() | GET  | /api/v1/auth | Returns {'auth': true} if auth | -- | { 'auth': true } |
 | .login(email, password) | POST | /api/v1/auth/login | Login | {email: 'anthonybudd@ideea.co.uk',  password: 'password'} | {access_token} |
