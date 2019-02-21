@@ -2,13 +2,14 @@
   <img width="192" src="https://ideea.io/static/img/logo-text.svg" alt="Ideea">
 </p>
 
-<h1 align="center">Ideea API</h1>
+---
+
+### [Website](https://ideea.io) &nbsp;&nbsp;&nbsp; [Getting Started](https://ideea.io) &nbsp;&nbsp;&nbsp; [Docs](https://ideea.io/docs/scape) &nbsp;&nbsp;&nbsp; [Docs](https://app.ideea.io) &nbsp;&nbsp;&nbsp; [Docs](https://app.ideea.io)
 
 ---
 
-### [Website](https://ideea.io) &nbsp; [website](https://app.ideea.io) &nbsp; [Getting Started](https://app.ideea.io) &nbsp; [getting-started](https://app.ideea.io) &nbsp; [Docs](https://app.ideea.io) &nbsp; [docs](https://app.ideea.io)
+# Ideea JS SDK
 
----
 
 
 
