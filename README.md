@@ -1,4 +1,16 @@
-# Ideea JS SDK
+<p align="center">
+  <img width="192" src="https://ideea.io/static/img/ideea-logo-text.svg" alt="Ideea">
+</p>
+
+<h1 align="center">Ideea API</h1>
+
+---
+
+### [Website](https://ideea.io) &nbsp; [website](https://app.ideea.io) &nbsp; [Getting Started](https://app.ideea.io) &nbsp; [getting-started](https://app.ideea.io) &nbsp; [Docs](https://app.ideea.io) &nbsp; [docs](https://app.ideea.io)
+
+---
+
+
 
 ## Routes
 | SDK Method | HTTP Method | Route | Description | Params (Bold = optional) | Response |
