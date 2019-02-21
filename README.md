@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="192" src="https://ideea.io/static/img/ideea-logo-text.svg" alt="Ideea">
+  <img width="192" src="https://ideea.io/static/img/logo-text.svg" alt="Ideea">
 </p>
 
 <h1 align="center">Ideea API</h1>
