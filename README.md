@@ -4,12 +4,12 @@
 
 ---
 
-### [Ideea.io](https://ideea.io) &nbsp;&nbsp;&nbsp; [Getting Started](https://ideea.io) &nbsp;&nbsp;&nbsp; [Cheat Sheet](https://ideea.io/docs/ideea) &nbsp;&nbsp;&nbsp; [Full Documentation](https://app.ideea.io) &nbsp;&nbsp;&nbsp; [Docs](https://app.ideea.io)
+### [Ideea.io](https://ideea.io) &nbsp;&nbsp;&nbsp; [Getting Started](https://ideea.io) &nbsp;&nbsp;&nbsp; [Cheat Sheet](https://github.com/Ideea-inc/ideea-js/blob/master/docs/cheat-sheet.md) &nbsp;&nbsp;&nbsp; [Full Documentation](https://app.ideea.io/scape/docs)
 
 ---
 
 # Ideea JS SDK
-intro
+This is the offical SDK for the Ideea platform.
 
 
 ## Installation
@@ -25,7 +25,7 @@ const fs = require('fs')
 
 var scape = new Scape('6B1AEBDF03B69CC1FB59BD33162410979213A8FF4CF59CAE54E3436D5535E318')
 
-var image = fs.readFileSync('./image.png');
+var image = fs.readFileSync('./image.png')
 
 scape.upload(image, {
 	bucket_id: '00ce6d6a-ea29-4840-9b5d-cd1f6ae3bc6b'
@@ -37,5 +37,26 @@ scape.upload(image, {
 
 ## Methods
 
+### .login(email, password)
+This route is used to generate a new access token.
+
+```
+scape.login('johndoe@gmail.com', 'password').then((accessToken) => {
+	console.log(accessToken)
+})
+```
 
 
+### .getUser()
+
+### .getGroup(groupID)
+
+### .getGroupUsers(groupID)
+
+### .getApiKeys(groupID, apiKey)
+
+### .createApiKey(groupID, apiKey)
+
+### .createEphemeralKey(groupID)
+
+### .createOneTimeUseKey(groupID)
