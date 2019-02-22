@@ -4,12 +4,12 @@
 
 ---
 
-### [Ideea.io](https://ideea.io) &nbsp;&nbsp;&nbsp; [Getting Started](https://ideea.io) &nbsp;&nbsp;&nbsp; [Cheat Sheet](https://github.com/Ideea-inc/ideea-js/blob/master/docs/cheat-sheet.md) &nbsp;&nbsp;&nbsp; [Full Documentation](https://app.ideea.io/scape/docs)
+### [Ideea.io](https://ideea.io) &nbsp;&nbsp;&nbsp; [Getting Started](https://ideea.io/scape) &nbsp;&nbsp;&nbsp; [Cheat Sheet](https://github.com/Ideea-inc/ideea-js/blob/master/docs/cheat-sheet.md) &nbsp;&nbsp;&nbsp; [Full Documentation](https://app.ideea.io/scape/docs)
 
 ---
 
 # Ideea JS SDK
-This is the offical SDK for the Ideea platform.
+This is the official SDK for the Ideea platform. You can use this SDK to manage users and groups, create API Keys and get billing information.
 
 
 ## Installation
@@ -36,6 +36,8 @@ scape.upload(image, {
 
 
 ## Methods
+This is not a complete list of methods. Please refer to the [full documentation](https://ideea.io/ideea/docs) for the full list of methods.
+
 
 ### .login(email, password)
 This route is used to generate a new access token.
