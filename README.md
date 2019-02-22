@@ -48,15 +48,44 @@ scape.login('johndoe@gmail.com', 'password').then((accessToken) => {
 
 
 ### .getUser()
+To get the current user use the method .getUser()
+
+```
+scape.getUser().then((user) => {
+	console.log(user.email);
+	console.log(user.first_name);
+	console.log(user.last_name);
+})
+```
 
 ### .getGroup(groupID)
+To a group by ID
+
+```
+scape.getGroup('00ce6d6a-ea29-4840-9b5d-cd1f6ae3bc6b').then((group) => {
+	console.log(group.id);
+	console.log(group.name);
+})
+```
 
 ### .getGroupUsers(groupID)
+Get the users in a specific group
 
-### .getApiKeys(groupID, apiKey)
+```
+scape.getGroupUsers('00ce6d6a-ea29-4840-9b5d-cd1f6ae3bc6b').then((users) => {
+	users.map(user => {
+		console.log(user)
+	})
+})
+```
 
-### .createApiKey(groupID, apiKey)
+### .getApiKeys(groupID)
+Get all of the API keys associted with a specific group
 
-### .createEphemeralKey(groupID)
-
-### .createOneTimeUseKey(groupID)
+```
+scape.getApiKeys('00ce6d6a-ea29-4840-9b5d-cd1f6ae3bc6b').then((apiKeys) => {
+	apiKeys.map(apikey => {
+		console.log(apikey)
+	})
+})
+```
