@@ -36,7 +36,7 @@ This is not a complete list of methods. Please refer to the [full documentation]
 ### .login(email, password)
 This route is used to generate a new access token.
 
-```
+```js
 ideea.login('johndoe@gmail.com', 'password').then((accessToken) => {
 	console.log(accessToken)
 })
@@ -46,7 +46,7 @@ ideea.login('johndoe@gmail.com', 'password').then((accessToken) => {
 ### .getUser()
 To get the current user use the method .getUser()
 
-```
+```js
 ideea.getUser().then((user) => {
 	console.log(user.email);
 	console.log(user.first_name);
@@ -57,7 +57,7 @@ ideea.getUser().then((user) => {
 ### .getGroup(groupID)
 To a group by ID
 
-```
+```js
 ideea.getGroup('00ce6d6a-ea29-4840-9b5d-cd1f6ae3bc6b').then((group) => {
 	console.log(group.id);
 	console.log(group.name);
@@ -67,7 +67,7 @@ ideea.getGroup('00ce6d6a-ea29-4840-9b5d-cd1f6ae3bc6b').then((group) => {
 ### .getGroupUsers(groupID)
 Get the users in a specific group
 
-```
+```js
 ideea.getGroupUsers('00ce6d6a-ea29-4840-9b5d-cd1f6ae3bc6b').then((users) => {
 	users.map(user => {
 		console.log(user)
@@ -78,7 +78,7 @@ ideea.getGroupUsers('00ce6d6a-ea29-4840-9b5d-cd1f6ae3bc6b').then((users) => {
 ### .getApiKeys(groupID)
 Get all of the API keys associted with a specific group
 
-```
+```js
 ideea.getApiKeys('00ce6d6a-ea29-4840-9b5d-cd1f6ae3bc6b').then((apiKeys) => {
 	apiKeys.map(apikey => {
 		console.log(apikey)
