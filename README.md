@@ -4,7 +4,7 @@
 
 ---
 
-### [Ideea.io](https://ideea.io) &nbsp;&nbsp;&nbsp; [Getting Started](https://ideea.io/scape) &nbsp;&nbsp;&nbsp; [Cheat Sheet](https://github.com/Ideea-inc/ideea-js/blob/master/docs/cheat-sheet.md) &nbsp;&nbsp;&nbsp; [Full Documentation](https://app.ideea.io/scape/docs)
+### [Ideea.io](https://ideea.io) &nbsp;&nbsp;&nbsp; [Getting Started](https://ideea.io/ideea) &nbsp;&nbsp;&nbsp; [Cheat Sheet](https://github.com/Ideea-inc/ideea-js/blob/master/docs/cheat-sheet.md) &nbsp;&nbsp;&nbsp; [Full Documentation](https://app.ideea.io/ideea/docs)
 
 ---
 
@@ -19,18 +19,12 @@ $ npm install ideea-js
 
 ## Getting Started
 ```js
-const Scape = require('scape-js')
-const fs = require('fs')
+const Ideea = require('ideea-js')
 
+var ideea = new Ideea('6B1AEBDF03B69CC1FB59BD33162410979213A8FF4CF59CAE54E3436D5535E318')
 
-var scape = new Scape('6B1AEBDF03B69CC1FB59BD33162410979213A8FF4CF59CAE54E3436D5535E318')
-
-var image = fs.readFileSync('./image.png')
-
-scape.upload(image, {
-	bucket_id: '00ce6d6a-ea29-4840-9b5d-cd1f6ae3bc6b'
-}).then(function (image) {
-	console.log(image)
+ideea.login('johndoe@example.com', 'password').then(accessToken => {
+	console.log(accessToken)
 })
 ```
 
@@ -43,7 +37,7 @@ This is not a complete list of methods. Please refer to the [full documentation]
 This route is used to generate a new access token.
 
 ```
-scape.login('johndoe@gmail.com', 'password').then((accessToken) => {
+ideea.login('johndoe@gmail.com', 'password').then((accessToken) => {
 	console.log(accessToken)
 })
 ```
@@ -53,7 +47,7 @@ scape.login('johndoe@gmail.com', 'password').then((accessToken) => {
 To get the current user use the method .getUser()
 
 ```
-scape.getUser().then((user) => {
+ideea.getUser().then((user) => {
 	console.log(user.email);
 	console.log(user.first_name);
 	console.log(user.last_name);
@@ -64,7 +58,7 @@ scape.getUser().then((user) => {
 To a group by ID
 
 ```
-scape.getGroup('00ce6d6a-ea29-4840-9b5d-cd1f6ae3bc6b').then((group) => {
+ideea.getGroup('00ce6d6a-ea29-4840-9b5d-cd1f6ae3bc6b').then((group) => {
 	console.log(group.id);
 	console.log(group.name);
 })
@@ -74,7 +68,7 @@ scape.getGroup('00ce6d6a-ea29-4840-9b5d-cd1f6ae3bc6b').then((group) => {
 Get the users in a specific group
 
 ```
-scape.getGroupUsers('00ce6d6a-ea29-4840-9b5d-cd1f6ae3bc6b').then((users) => {
+ideea.getGroupUsers('00ce6d6a-ea29-4840-9b5d-cd1f6ae3bc6b').then((users) => {
 	users.map(user => {
 		console.log(user)
 	})
@@ -85,7 +79,7 @@ scape.getGroupUsers('00ce6d6a-ea29-4840-9b5d-cd1f6ae3bc6b').then((users) => {
 Get all of the API keys associted with a specific group
 
 ```
-scape.getApiKeys('00ce6d6a-ea29-4840-9b5d-cd1f6ae3bc6b').then((apiKeys) => {
+ideea.getApiKeys('00ce6d6a-ea29-4840-9b5d-cd1f6ae3bc6b').then((apiKeys) => {
 	apiKeys.map(apikey => {
 		console.log(apikey)
 	})

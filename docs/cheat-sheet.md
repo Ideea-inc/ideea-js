@@ -14,9 +14,8 @@
 | .getGroupUsers(groupID) | GET  | /api/v1/groups/{group_id}/users | Returns the group's users | -- | [User, User...] |
 | .addUserToGroup(groupID, userID, role) | POST | /api/v1/groups/{group_id}/users/add | Add user to group | {user_id: '', role: 'user' } | { 'success': true } |
 | .removeUserFromGroup(groupID, userID) | POST | /api/v1/groups/{group_id}/users/remove | Remove user from group | {user_id: '' } | { 'success': true } |
-| **Tokens** |  |  |  |  |  |
+| **API Keys** |  |  |  |  |  |
 | .getApiKeys(groupID) | GET  | /api/v1/groups/{group_id}/tokens  | Returns the groups tokens | -- | [Token, Token..] |
-| .createApiKey(groupID, apiKey) | POST | /api/v1/groups/{group_id}/tokens/create  | Creates a new token | -- | {Token} |
-| .createEphemeralKey(groupID) | POST | /api/v1/groups/{group_id}/tokens/create/ephemeral  | Creates a new ephemeral token | -- | {Token} |
-| .createOneTimeUseKey(groupID | POST | /api/v1/groups/{group_id}/tokens/create/one-time ) | Creates a new one-time use token | -- | {Token} |
+| .createApiKey(groupID, apiKey) | POST | /api/v1/groups/{group_id}/tokens/create  | Creates a new token | {password: 'password'} | {Token} |
 | .deleteApiKey(groupID, apiKeyID) | DEL  | /api/v1/groups/{group_id}/tokens/{token_id}/delete  | Deletes a token | -- | { 'success': true } |
+| .createOneTimeUseKey(groupID | POST | /api/v1/groups/{group_id}/tokens/create/one-time | Creates a new one-time use token | -- | {Token} |
