@@ -4,7 +4,7 @@
 
 ---
 
-### [Ideea.io](https://ideea.io) &nbsp;&nbsp;&nbsp; [Getting Started](https://ideea.io/ideea) &nbsp;&nbsp;&nbsp; [Cheat Sheet](https://github.com/Ideea-inc/ideea-js/blob/master/docs/cheat-sheet.md) &nbsp;&nbsp;&nbsp; [Full Documentation](https://ideea.io/docs/ideea)
+### [Ideea.io](https://ideea.io) &nbsp;&nbsp;&nbsp; [Getting Started](https://ideea.io/ideea) &nbsp;&nbsp;&nbsp; [Full Documentation](https://ideea.io/docs/ideea) &nbsp;&nbsp;&nbsp; [Cheat Sheet](https://github.com/Ideea-inc/ideea-js/blob/master/docs/cheat-sheet.md) 
 
 ---
 

@@ -1,4 +1,4 @@
-## Cheat Sheet
+# Cheat Sheet
 
 | SDK Method | HTTP Method | Route | Description | Params (Bold = optional) | Response |
 | ------ | ------ | ------ | ------ | ------ | ------ |
